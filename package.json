@@ -13,7 +13,11 @@
     "build": "npx tsc",
     "start": "node build/index.js",
     "dev": "tsc-watch --onSuccess \"node build/index.js\"",
-    "check": "npx eslint src/**/*.ts && npx prettier --check ."
+    "check": "npx eslint src/**/*.ts && npx prettier --check .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "npm run check"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +40,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
     "prettier": "2.8.7",
     "ts-node": "^10.9.1",
     "tsc-watch": "^6.0.0",
