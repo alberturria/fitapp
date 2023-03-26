@@ -1,0 +1,23 @@
+{
+  "extends": ["standard", "prettier"],
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": [
+      "error",
+      "double",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "globalReturn": false
+    },
+    "babelOptions": {
+      "configFile": "path/to/config.js"
+    }
+  },
+  "plugins": ["@typescript-eslint"]
+}

@@ -1,16 +1,16 @@
 import dotenv from "dotenv";
-dotenv.config();
 import { DataSource } from "typeorm";
-import { User } from "./entity/user";
+import { User } from "./entity/user.js";
+dotenv.config();
 
 export const AppDataSource = new DataSource({
-	type: "postgres",
-	host: process.env.HOST,
-	port: Number(process.env.DB_PORT),
-	username: process.env.DB_USERNAME,
-	password: process.env.DB_PASSWORD,
-	database: process.env.DB_NAME,
-	entities: [User],
-	subscribers: [],
-	migrations: ["src/migrations/**/*{.js,.ts}"],
+  type: "postgres",
+  host: process.env.HOST,
+  port: Number(process.env.DB_PORT),
+  username: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  entities: [User],
+  subscribers: [],
+  migrations: ["build/migrations/**/*"]
 });
