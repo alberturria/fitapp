@@ -1,6 +1,6 @@
-import { UserDataSourceInterface } from "../../data/interfaces/data-sources/user-data-source-interfaces.js";
-import { UserEntity } from "../entities/user.js";
-import { UserRepositoryInterface } from "../interfaces/repositories/user-repository-interface.js";
+import { UserDataSourceInterface } from "../../data/interfaces/data-sources/user-data-source-interfaces";
+import { UserEntity } from "../entities/user";
+import { UserRepositoryInterface } from "../interfaces/repositories/user-repository-interface";
 
 class UserRepository implements UserRepositoryInterface {
   userDataSource: UserDataSourceInterface;

@@ -1,4 +1,4 @@
-import { UserEntity } from "../../../domain/entities/user.js";
+import { UserEntity } from "../../../domain/entities/user";
 
 interface UserDataSourceInterface {
   getAll(): Promise<UserEntity[]>;

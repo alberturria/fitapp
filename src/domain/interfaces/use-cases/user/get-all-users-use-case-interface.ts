@@ -1,4 +1,4 @@
-import { UserEntity } from "../../../entities/user.js";
+import { UserEntity } from "../../../entities/user";
 
 interface GetAllUsersUseCaseInterface {
   execute(): Promise<UserEntity[]>;

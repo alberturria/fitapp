@@ -1,5 +1,5 @@
 import express, { Request, Response } from "express";
-import { GetAllUsersUseCaseInterface } from "../domain/interfaces/use-cases/user/get-all-users-use-case-interface.js";
+import { GetAllUsersUseCaseInterface } from "../domain/interfaces/use-cases/user/get-all-users-use-case-interface";
 
 function userRouter(getAllUsersUseCase: GetAllUsersUseCaseInterface) {
   const router = express.Router();
