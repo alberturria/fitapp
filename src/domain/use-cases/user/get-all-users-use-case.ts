@@ -1,5 +1,5 @@
-import { UserRepositoryInterface } from "../../interfaces/repositories/user-repository-interface.js";
-import { GetAllUsersUseCaseInterface } from "../../interfaces/use-cases/user/get-all-users-use-case-interface.js";
+import { UserRepositoryInterface } from "../../interfaces/repositories/user-repository-interface";
+import { GetAllUsersUseCaseInterface } from "../../interfaces/use-cases/user/get-all-users-use-case-interface";
 
 class GetAllUsersUseCase implements GetAllUsersUseCaseInterface {
   userRepository: UserRepositoryInterface;

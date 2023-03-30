@@ -1,7 +1,7 @@
 import { DataSource, Repository } from "typeorm";
-import { UserEntity } from "../../domain/entities/user.js";
-import { UserDataSourceInterface } from "../interfaces/data-sources/user-data-source-interfaces.js";
-import { User } from "./postgres/models/user.js";
+import { UserEntity } from "../../domain/entities/user";
+import { UserDataSourceInterface } from "../interfaces/data-sources/user-data-source-interfaces";
+import { User } from "./postgres/models/user";
 
 class UserDataSource implements UserDataSourceInterface {
   private database: Repository<User>;
