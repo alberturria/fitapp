@@ -19,5 +19,8 @@
       "configFile": "path/to/config.js"
     }
   },
-  "plugins": ["@typescript-eslint"]
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "jest": true
+  }
 }
