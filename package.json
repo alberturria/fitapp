@@ -13,7 +13,8 @@
     "start": "node build/index.js",
     "dev": "tsc-watch --onSuccess \"node build/index.js\"",
     "check": "npx eslint src/**/*.ts && npx prettier --check .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "migrate": "typeorm-ts-node-commonjs migration:run  -d src/data/data-sources/data-source.ts"
   },
   "lint-staged": {
     "**/*": "npm run check"
